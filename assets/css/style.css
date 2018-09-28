@@ -15,11 +15,21 @@ ul{
   margin: 0px;
   list-style: none;
 }
+/* Flash */
+.flash{
+  padding: 60px 0px;
+}
+.flash img{
+  width: 100%;
+}
+/* Flash */
+
 /* PRODUK */
 .product{
   padding: 60px 0px;
 }
-.product h2{
+.product h2,
+.deals-day h2{
   position: relative;
   font-size: 36px;
   border-bottom: 1px solid #c1cadb;
@@ -29,7 +39,8 @@ ul{
   font-weight: 700;
   color: #4569cd;
 }
-.product h2::after{
+.product h2::after,
+.deals-day h2::after{
   left: 45% !important;
 }
 .product-inner.borders{
@@ -96,7 +107,8 @@ h4.title-head{
   position: relative;
 }
 h4.title-head::after,
-.product h2::after{
+.product h2::after,
+.deals-day h2::after{
   content: '';
   background: rgba(193,85,246,1);/* Old Browsers */
   background: -moz-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%); /* FF3.6+ */
