@@ -734,6 +734,22 @@ footer .copyright p{
 .mb-50{
   margin-bottom: 50px;
 }
+.cta .col-md-3{
+  position: relative;
+}
+.cta .col-md-3:last-child::after{
+  content: none;
+}
+.cta .col-md-3::after{
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: #fff;
+  right: 17px;
+  top: 0px;
+  display: block;
+  position: absolute;
+}
 /* End FOOTER */
 
 /* advertise */
@@ -1105,4 +1121,11 @@ footer .copyright p{
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
+}
+section.register{
+  background: url('../img/party-banner.png') no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 417px;
+  max-block-size: 417px;
 }
