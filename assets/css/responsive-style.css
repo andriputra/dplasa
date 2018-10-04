@@ -1,6 +1,140 @@
 /* Small Phone Style */
 @media (min-width: 320px) and (max-width: 767px){
-  
+    .navbar-brand {
+        margin-right: 0px;
+    }
+    ul.menu-fill li {
+        display: inline-block;
+        padding: 10px 0px;
+        margin: 0px 4px;
+    }
+    .navbar-nav li {
+        margin: 10px 0px 0px;
+        width: 100%;
+    }
+    .form-list {
+        width: 100%;
+    }
+    .advertise {
+        width: 100%;
+        margin-left: 0px;
+        display: block;
+    }
+    .advertise .big-screen {
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+    .small-screen,
+    .img-ads img{
+        width: 100%;
+    }
+    .img-ads {
+        height: auto;
+    } 
+    .img-ads img{
+        height: auto;
+    }   
+    .cta-top{
+        padding: 20px 10px;
+    }
+    .cta-top .col{
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .box-reg,
+    .product-cat{
+        display: block;
+    }
+    .list-cat {
+        border-right: none;
+        border-bottom: 1px solid #c1cadb;
+    }
+    .product-cat{
+        border-bottom: none;
+    }
+    ul.promo-list {
+        margin-top: 20px;
+    }
+    ul.promo-list li{
+        width: 22.6%;
+    }
+    ul.media-share li{
+        width: 18%;
+    }
+    ul.media-share li a {
+        font-size: 2em;
+    }
+    .flash {
+        padding: 20px 0px 20px;
+    }
+    .flash-deals .col-12{
+        margin-bottom: 10px;
+    }
+    .box-static{
+        text-align: center
+    }
+    .box-static .action a {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+    }
+    .box-title,.nav-tabs{
+        width: 100%;
+    }
+    .box-flex {
+        display: block;
+    }
+    .nav-tabs{
+        width: 100%;
+        padding-right: 0px;
+        text-align: center;
+    }
+    .head-top h1{
+        font-size: 1.5em;
+    }
+    .head-top .action {
+        width: 100%;
+    }
+    .reg-text,
+    .reg-form{
+        padding: 30px 20px;
+    }
+    .reg-form p{
+        font-size: 1em;
+    }
+    .form-bottom button{
+        font-size: 0.7em;
+    }
+    .cta.p-35{
+        padding: 30px 0px 0px;
+    }
+    .cta .col-md-3{
+        padding-bottom: 40px;
+    }
+    .cta .col-md-3::after {
+        content: '';
+        height: 1px;
+        width: 87%;
+        background: #fff;
+        right: 20px;
+        top: 70px;
+        display: block;
+        position: absolute;
+        left: 20px;
+    }
+    .widget .col{
+        flex: 100%;
+    }
+    footer .widget h4{
+        margin-top: 20px;
+    }
+    footer .mb-50 {
+        margin-bottom: 20px;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
 

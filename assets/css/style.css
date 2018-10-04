@@ -1313,7 +1313,7 @@ input[type="checkbox"]:disabled + .label-text:before{
   text-align: center;
   display: flex;
   background: rgba(89, 91, 101, 0.82);
-  transition: .5s ease;
+  /* transition: .5s ease; */
   position: absolute;
   height: 0%;
   bottom: 0;
