@@ -1140,6 +1140,8 @@ input[type="checkbox"] + .label-text:before{
   text-transform: none;
   line-height: 2;
   -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
   width: 1em;
   display: inline-block;
   margin-right: 5px;
@@ -1208,6 +1210,7 @@ input[type="checkbox"]:disabled + .label-text:before{
 }
 .input-wrapper select{
   -webkit-appearance: none;
+    -moz-appearance: none;
   border-radius: 50px;
 }
 .navbar-wrapper-content ul.paginate-content li{

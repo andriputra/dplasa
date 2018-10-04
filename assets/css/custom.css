@@ -24,6 +24,17 @@ ul.sidebar-dropdown li a i{
 .card-blog img{
   border-radius: 5px;
 }
+.card-blog img .chip-image
+{
+  /*height: auto;*/
+  position: absolute;
+  bottom: 100%;
+}
+.card-blog img .chip-image .date{
+  padding: 5px 10px;
+  color: #888;
+  background-color: #C1CADB;
+}
 .card-blog p{
 	display: inline-block;
 	padding: 5px;
@@ -82,4 +93,39 @@ blockquote a:hover{
 
 blockquote em{
   font-style: italic;
+}
+.chip-tag{
+  padding: 2px 15px;
+  background-color: #ECF0FB;
+  border: 1px solid #C1CADB;
+  border-radius: 50px;
+  display: inline-block;
+
+}
+.imgHolder{
+  position: relative;
+}
+.imgHolder span {
+    position: absolute;
+    /*right: 10px;*/
+    left: 10px;
+    top: 10px;
+}
+.imgHolder span .date{
+  background-color: #ECF0FB;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  display: block;
+}
+.imgHolder p{
+  margin: 0;
+}
+.imgHolder span .month{
+  background-color: #4569CD;
+  /*font-size: 20px;*/
+  /*font-weight: bold;*/
+  padding: 5px;
+  color: #fff;
+  display: block;
 }
