@@ -811,3 +811,258 @@ footer .copyright p{
 .flash-tab img.full{
   width: 100%;  
 }
+
+
+/*my custom*/
+.star-rating{
+  font-size: 10px;
+  color: #ddd;
+}
+.star-rating-checked{
+  color: orange;
+}
+.item .box .danger-chip{
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  background-color: #fdcaca;
+  padding: 2px 10px;
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+  border: 1px solid #f37e79;
+  border-radius: 20px;
+}
+.item .box .primary-chip{
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  background-color: #4669cd;
+  padding: 2px 10px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.item-box .box
+{
+  height: 310px;
+  padding-bottom: 20px; 
+  margin-top: 5%;
+}
+.review-title{
+  font-size: 10px;
+  display: inline-block;
+}
+
+.item-box:hover{
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+  box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+}
+.white{
+  background-color: white !important;
+}
+.p-20{
+  padding: 20px;
+}
+.input-radius{
+  border-radius: 50px;
+}
+.grey{
+  background-color: #eee;
+}
+.btn-gradient
+{
+    border-radius: 50px;
+    color: #ffff;
+    background: rgba(193,85,246,1);
+    background: -moz-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(193,85,246,1)), color-stop(100%, rgba(65,104,212,1)));
+    background: -webkit-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: -o-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: -ms-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: linear-gradient(to right, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c155f6', endColorstr='#4168d4', GradientType=1 );
+    width: 100%;
+    text-align: center;
+    letter-spacing: .2em;
+}
+h5.title-sidebar-head {
+    /*color: #666;*/
+    font-weight: 600;
+    font-size: 24px;
+    border-bottom: 1px solid #c1cadb;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    position: relative;
+}
+h5.title-sidebar-head::after{
+    content: '';
+    background: rgba(193,85,246,1);
+    background: -moz-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(193,85,246,1)), color-stop(100%, rgba(65,104,212,1)));
+    background: -webkit-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: -o-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: -ms-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    background: linear-gradient(to right, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c155f6', endColorstr='#4168d4', GradientType=1 );
+    height: 3px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.bold{
+  font-weight: bold;
+}
+label.check-label{
+  position: relative;
+  cursor: pointer;
+  color: #666;
+  font-size: 15px;
+  display: block;
+}
+input[type="checkbox"]{
+  position: absolute;
+  right: 9000px;
+}
+
+/*Check box*/
+input[type="checkbox"] + .label-text:before{
+  content: "\f096";
+  font-family: "FontAwesome";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 2;
+  -webkit-font-smoothing:antialiased;
+  width: 1em;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked + .label-text:before{
+  content: "\f14a";
+  color: #4569cd;
+  animation: effect 250ms ease-in;
+}
+
+input[type="checkbox"]:disabled + .label-text{
+  color: #4569cd;
+}
+
+input[type="checkbox"]:disabled + .label-text:before{
+  content: "\f0c8";
+  color: #ccc;
+}
+.breadcrumb > li + li:before {
+  font-family: "FontAwesome";
+  color: #666;
+  content: "\f101";
+  padding: 0 5px;
+}
+.breadcrumb{
+  background-color: transparent;
+}
+.navbar-wrapper-content
+{
+  background-color: #f4f9fc !important;
+  /*height: 70px;*/
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: inline-block;
+}
+.navbar-wrapper-content i{
+  padding-left: 1%;
+}
+
+.navbar-wrapper-content .input-wrapper {
+    position: relative;
+    width: 100%; 
+}
+
+.navbar-wrapper-content .input-wrapper select,  .bottom-content-wrapper .input-wrapper select{
+    height: 32px !important; 
+    font-size: 13px;
+}
+ 
+.input-wrapper:before {
+    content: "\f107 ";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #888;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.input-wrapper select{
+  -webkit-appearance: none;
+  border-radius: 50px;
+}
+.navbar-wrapper-content ul.paginate-content li{
+  display: inline-block;
+  padding: 0px 2px;
+}
+.navbar-wrapper-content ul.paginate-content a.active-paginate{
+  display: block;
+  background-color: #c2cbdc;
+  padding: 4px 10px;
+  border-radius: 100%;
+}
+.navbar-wrapper-content ul.paginate-content a.active-paginate-down{
+  display: block;
+  background-color: #4568cc;
+  padding: 4px 10px;
+  color: #fff;
+  border-radius: 100%;
+}
+.navbar-wrapper-content ul.paginate-content a.last-paginate{
+  display: block;
+  background-color: #f4fafb;
+  padding: 4px 10px;
+  /*color: #fff;*/
+  border-radius: 100%;
+  border: 1px solid #c2cbdc;
+}
+.transparent{
+  background-color: transparent !important;
+}
+.noUi-horizontal .noUi-handle {
+    width: 38px ;
+    height: 9px !important;
+    left: -1px !important;
+    top: 3px !important;
+}
+.noUi-handle:after, .noUi-handle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px !important;
+    width: 12px !important;
+    background: #E8E7E6 !important;
+    left: 4px !important;
+    top: 4px !important;
+}
+.noUi-connect {
+  background: #4767d3 !important;
+}
+
+@keyframes effect{
+  0%{transform: scale(0);}
+  25%{transform: scale(1.3);}
+  75%{transform: scale(1.4);}
+  100%{transform: scale(1);}
+}
+/*end my custom*/
