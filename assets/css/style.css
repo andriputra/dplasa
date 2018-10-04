@@ -249,12 +249,12 @@ span.notif{
   position: absolute;
   top: 11px;
   left: 0px;
-  z-index: -1;
 }
 .or span{
   display: inline-block;
   background: #ffffff;
   padding: 0px 8px;
+  position: relative;
 }
 .form-bottom .form-group{
   margin-bottom: 10px;
@@ -1265,7 +1265,6 @@ input[type="checkbox"]:disabled + .label-text:before{
   100%{transform: scale(1);}
 }
 /*end my custom*/
-=======
 .gen-prod{
   margin-bottom: 30px;
 }
@@ -1433,8 +1432,117 @@ input[type="checkbox"]:disabled + .label-text:before{
 section.register{
   background: url('../img/party-banner.png') no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: contain;
   min-height: 417px;
-  max-block-size: 417px;
+  background-color: #f4f9fc;
+  padding-bottom: 60px;
 }
->>>>>>> 79279052a81a2785ed39681a84399fa121839e49
+.head-top{
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+.head-top h1{
+  font-weight: 300;
+  color: #30323e;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.head-top .action{
+  width: 30%;
+  margin: 0 auto;
+}
+.head-top .action button:hover{
+  color: #ffffff;
+}
+.box-reg{
+  display: flex;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+  box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
+}
+.reg-text{
+  flex: 2;
+  background: rgba(193,85,246,1);
+  background: -moz-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(193,85,246,1)), color-stop(100%, rgba(65,104,212,1)));
+  background: -webkit-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+  background: -o-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+  background: -ms-linear-gradient(left, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+  background: linear-gradient(to right, rgba(193,85,246,1) 0%, rgba(65,104,212,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c155f6', endColorstr='#4168d4', GradientType=1 );
+  color: #ffff;
+  padding: 80px 90px;
+}
+.reg-form{
+  background-color: #ffffff;
+  padding: 40px 30px;
+  flex: 1;
+}
+.reg-form form{
+  margin-bottom: 15px;
+}
+.reg-form h1{
+  font-size: 24px;
+  text-align: center;
+  color: #30323e;
+}
+.reg-form p{
+  color: #697687;
+  text-align: center;
+  font-size: 16px;
+}
+.reg-form p a{
+  color: #4569cd;
+}
+.reg-form label{
+  font-size: 14px;
+  color: #697687;
+  font-weight: normal;
+}
+.reg-form input{
+  border-radius: 50px;
+}
+.head-title{
+  text-align: center;
+  position: relative;
+  margin-bottom: 74px;
+}
+.head-title::after{
+  content: '';
+  background: #ffffff;
+  width: 20%;
+  height: 1px;
+  left: 40%;
+  bottom: -30px;
+  position: absolute;
+  display: block;
+}
+.content-reg{
+  font-weight: 300;
+}
+.content-reg ul{
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.content-reg ul li{
+  margin-bottom: 7px;
+}
+.content-reg ul li .fa{
+  margin-right: 7px;
+}
+.form-bottom.login{
+  display: flex;
+}
+.form-bottom.login .col-block{
+  flex: 1;
+}
+.form-bottom.login .col-block:first-child{
+  margin-right: 2px;
+}
+.form-bottom.login .col-block:last-child{
+  margin-left: 4px;
+}
+.form-bottom button{
+  color:#30323e;
+}
