@@ -1,0 +1,85 @@
+
+ul.sidebar-dropdown{
+	width: 100% !important;
+}
+ul.sidebar-dropdown li{
+	/*border-bottom: 1px solid #ddd;*/
+	padding: 0px;
+}
+ul.sidebar-dropdown li a{
+	display: inline-block;
+    /*padding: 0px 15px;*/
+    /*margin: 0px 10px;*/
+    font-size: 17px;
+}
+ul.sidebar-dropdown li a i{
+    font-size: 20px;
+}
+.rounded{
+	border-radius: 20px;
+}
+.card-blog{
+  border: 0;
+}
+.card-blog img{
+  border-radius: 5px;
+}
+.card-blog p{
+	display: inline-block;
+	padding: 5px;
+	padding-left: 0;
+}
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 60px;
+  padding-left: 80px;
+  padding-top: 40px;
+  margin: 0 0 50px;
+  position: relative;
+  
+  /*Font*/
+  /*font-family: Georgia, serif;*/
+  font-family: "FontAwesome";
+  font-size: 25px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+}
+
+blockquote::before{
+  content: "\f10d"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  /*font-family: Georgia, serif;*/
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
+blockquote a{
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c;
+}
+
+blockquote a:hover{
+ color: #666;
+}
+
+blockquote em{
+  font-style: italic;
+}
