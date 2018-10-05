@@ -2159,3 +2159,31 @@ strong.bold{
 .checkout-header.pay{
   margin: 40px 0px 30px;
 }
+.detail-pay .info-confirmation {
+  border: none;
+  margin-top: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+.detail-pay .info-confirmation .body-conf{
+  display: inline-block;
+  width: 49%;
+  vertical-align: text-top;
+}
+.detail-pay .info-confirmation .body-conf.area{
+  width: 100%;
+}
+.detail-pay .info-confirmation .body-conf.area textarea{
+  border-radius: 0px;
+}
+p.virtual{
+  font-size: 14px;
+  color: #9e9e9e;
+}
+span.orange{
+  display: inline-block;
+  font-size: 24px;
+  color: orange;
+  padding-left: 30px;
+}
