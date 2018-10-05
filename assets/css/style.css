@@ -1646,6 +1646,9 @@ ul.items li .remove a .fa{
 .breadcrumb-page{
   padding: 20px 0px;
 }
+.breadcrumb-page i{
+  margin: 0px 12px;
+}
 .breadcrumb-page .parent{
   color: #697687;
 }
@@ -1676,7 +1679,7 @@ ul.items li .remove a .fa{
 }
 .card-body .form-group input{
   font-size: 14px;
-  height: 40px;
+  height: auto;
   border-radius: 20px;
   border-color: #ebf0fc;
   margin-right: 20px;
@@ -1858,7 +1861,8 @@ strong.bold{
   padding: 20px 25px;
   border-radius: 5px;
 }
-.conf-order-box h4.title-head{
+.conf-order-box h4.title-head,
+.side-box h4.title-head{
   color: #30323E;
   font-size: 18px;
   padding-bottom: 12px;
@@ -1892,4 +1896,266 @@ strong.bold{
   width: 70%;
   font-size: 12px;
   padding: 10px;
+}
+.side-box{
+  border: 1px solid #C1CADB;
+  padding: 15px;
+  border-radius: 5px;
+}
+.side-box li{
+  display: flex;
+  border-bottom: 1px solid #C1CADB;
+  padding-bottom: 13px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.side-box li .info{
+  flex: 2;
+}
+.side-box li p{
+  margin-bottom: 0px;
+  color: #697687;
+}
+.side-box li p strong,
+.side-box li .price strong{
+  display: block;
+  margin-bottom: 7px;
+  color: #333333;
+}
+.side-box li .price {
+  text-align: right;
+  flex:1;
+}
+.total-box{
+  font-size: 16px;
+}
+
+.checkout__payment .card-header{
+  padding: 0px;
+  border-color: #dedede;
+}
+.checkout__payment .card{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-color: #ebf0fc;
+}
+.checkout__payment .card-item{
+  float: right;
+}
+.checkout__payment .card-header .custom-control{
+  padding: 15px 20px;
+  background: #ebf0fc;
+}
+.checkout__payment .card-header .collapsed{
+  background-color: #ffffff;
+}
+.checkout__payment .card-header label.custom-control-label{
+  font-size: 18px;
+  color: #434A54;
+  font-weight: 600;
+  display: inline-block;
+  width: 80%;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.checkout__payment .custom-radio .custom-control-label::before{
+  border: 2px solid #215ca0;
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  top: 1.7rem;
+  left: 20px;
+}
+.checkout__payment .custom-radio .custom-control-input:checked~.custom-control-label::before{
+  background-color: transparent;
+}
+.checkout__payment .custom-radio .custom-control-input:checked~.custom-control-label::after{
+  background-image: none;
+  background-color: #215ca0;
+  border-radius: 50%;
+  top: 1.94rem;
+  left: 24px;
+  height: 12px;
+  width: 12px;
+}
+.checkout__payment .card-body{
+  background-color: #F5F9FC;
+}
+.checkout__payment .form-field{
+  width: 75%;
+}
+.checkout__payment input.form-control,
+.checkout__payment select.form-control{
+  height: 54px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+.checkout__payment input.form-control:hover,
+.checkout__payment select.form-control:hover{
+  border-color: #215ca0;
+  box-shadow: 0px 0px 5px rgba(33,92,160,0.3), 0px 0px 5px rgba(33,92,160,0.3)
+}
+.checkout__payment .form-group-select select.form-control{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checkout__payment .form-group-select select.form-control::-ms-expand {
+  display: none;
+}
+.checkout__payment .form-group-select::after {
+  content: "\f0d7";
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  background: #215ca0;
+  height: 38px;
+  width: 35px;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 38px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.checkout__payment label {
+  color: #9AA0AB;
+}
+.checkout__payment .method .custom-checkbox.mr-sm-2 {
+  width: 49%;
+  display: inline-block;
+  margin-right: 0px !important;
+}
+.checkout__payment .footer__submit {
+  margin-top: 30px;
+}
+.checkout__payment .footer__submit .terms,
+.checkout__payment .footer__submit .secure{
+  display: inline-block;
+}
+.checkout__payment .footer__submit button{
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #215ca0;
+  border: none;
+  border-radius: 50px;
+  width: 35%;
+  height: 45px;
+}
+.checkout__payment .footer__submit button:hover{
+  background-color: #032E61;
+}
+.checkout__payment .footer__submit .terms{
+  width: 32%;
+  margin-left: 50px;
+  vertical-align: top;
+}
+.checkout__payment .footer__submit .terms p{
+  color: #9AA0AB;
+  font-size: 12px;
+  line-height: 18px;
+}
+.checkout__payment .footer__submit .terms p a{
+  color: #00a3e7;
+  text-decoration: none;
+  font-weight: 600;
+}
+.checkout__payment .footer__submit .secure{
+  color: #b5babf;
+  position: relative;
+  margin-left: 30px;
+  width: 15%;
+  padding-left: 27px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.checkout__payment .footer__submit .secure i.fa-lock{
+  font-size: 35px;
+  vertical-align: middle;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.checkout__payment .header__inner{
+  display: block;
+}
+.checkout__payment .header__inner p{
+  font-size: 15px;
+  color: #9AA0AB;
+  width: 47%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkout__payment .header__inner .img-logo-card{
+  display: inline-block;
+  float: right;
+}
+.checkout__payment .header__inner .img-logo-card img{
+  margin: 0px 5px;
+}
+.checkout__payment .cyan__info{
+  background-color: #dfecf4;
+  padding: 15px;
+  border: 1px solid #e6e7e9;
+  margin-bottom: 40px;
+}
+.checkout__payment .cyan__info p{
+  margin-bottom: 0px;
+  color: #2f95da;
+  font-style: italic;
+  line-height: 24px;
+}
+.checkout__payment .checked__inner{
+  display: block;
+}
+.checkout__payment .checked__inner div{
+  width: 17%;
+  margin-bottom: 20px;
+}
+.checkout__payment .checked__inner div label{
+  margin-left: 28px;
+}
+.checkout__payment .radio-check .custom-radio .custom-control-label img{
+  vertical-align: text-top;
+}
+.checkout__payment .radio-check .custom-radio .custom-control-label img.bni{
+  position: relative;
+  top: -9px;
+}
+.checkout__payment .radio-check .custom-radio .custom-control-label img.danamon{
+  position: relative;
+  top: -15px;
+}
+.checkout__payment .radio-check .custom-radio .custom-control-label img.indomaret{
+  position: relative;
+  top: -19px;
+}
+.checkout__payment .radio-check .custom-radio .custom-control-label::before {
+  border: 2px solid #215ca0;
+  background-color: transparent;
+  height: 18px;
+  width: 18px;
+  top: 0px;
+  left: 0px;
+}
+.checkout__payment .radio-check .custom-radio .custom-control-input:checked~.custom-control-label::after {
+  background-image: none;
+  background-color: #215ca0;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  height: 10px;
+  width: 10px;
+}
+.card-body.payment-methode .form-group{
+  width: 100%;
+}
+.card-body.payment-methode #Month{
+  margin-right: 0px;
+}
+.checkout-header.pay{
+  margin: 40px 0px 30px;
 }
