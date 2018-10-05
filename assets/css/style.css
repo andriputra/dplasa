@@ -1640,7 +1640,9 @@ ul.items li .remove a .fa{
   color: #738292;
   border: 1px solid #becadc;
 }
-
+.cart-page{
+  margin-bottom: 50px;
+}
 .breadcrumb-page{
   padding: 20px 0px;
 }
@@ -1740,10 +1742,26 @@ ul.items li .remove a .fa{
   border-top: 0px;
   font-size: 16px;
 }
+.table thead th:nth-child(3){
+  width: 11%;
+}
+.table thead th:nth-child(5){
+  width: 12%;
+}
+.table thead th:nth-child(8){
+  width: 13%;
+}
 .table-item td{
-  vertical-align: middle;
+  vertical-align: text-bottom;
   color: #697687;
   font-size: 15px;
+}
+.table-item td:nth-child(2) img{
+  width: 28%;
+}
+.table-item td:nth-child(2) img,
+.table-item td:nth-child(2) span{
+  display: inline-block;
 }
 .table-item td .fa{
   font-size: 20px;  
@@ -1756,6 +1774,9 @@ ul.items li .remove a .fa{
 td a.selected{
   color: #30323E;
   font-weight: 600;
+}
+.selected span{
+  font-weight: 400;
 }
 .table-item td .dropdown{
   position: relative;
@@ -1802,4 +1823,73 @@ th.shipping{
 }
 .table-item tbody{
   border-bottom: 1px solid #b3bac3;
+}
+.ongkir{
+  margin-top: 8px;
+}
+strong.bold{
+  font-size: 16px;
+  color: #333333;
+}
+.ongkir .box-ongkir{
+  box-shadow: 0px 5px 10px rgba(105,118,135,0.3);
+  border-top: 1px solid #ebf0fc;
+  padding: 10px;
+  font-size: 13px;
+}
+.box-ongkir .custom-control{
+  margin-bottom: 10px;
+}
+.box-ongkir .custom-control:last-child{
+  margin-bottom: 0px;
+}
+.box-ongkir a.btn{
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+.box-ongkir a.btn:hover{
+  background: #4569CD;
+  color: #ffffff;
+}
+.conf-order-box{
+  margin-top: 10px;
+  border: 1px solid #C1CADB;
+  padding: 20px 25px;
+  border-radius: 5px;
+}
+.conf-order-box h4.title-head{
+  color: #30323E;
+  font-size: 18px;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+.price-total{
+  display: flex;
+  font-size: 16px;
+}
+.price-total div{
+  flex: 1;
+}
+.price-total .count{
+  text-align: right;
+  color: #697687;
+}
+.conf-order-box .total{
+  font-size: 16px;
+  border-top: 1px solid #becadc;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+.total strong{
+  float: right;
+  font-size: 18px;
+}
+.conf-order-box .action{
+  text-align: right;
+}
+.conf-order-box .action a{
+  width: 70%;
+  font-size: 12px;
+  padding: 10px;
 }
