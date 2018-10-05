@@ -2187,3 +2187,100 @@ span.orange{
   color: orange;
   padding-left: 30px;
 }
+.price-total.botder-bott{
+  border-bottom: 1px solid #becadc;
+  margin-bottom: 10px;
+}
+.cart-view .table thead th:nth-child(3),
+.cart-view .table thead th:nth-child(5){
+  width: 17%;
+}
+.cart-view .table thead th:nth-child(4){
+  width: 16%;
+}
+.inline-group{
+  position: relative;
+  margin-bottom: 0px;
+}
+.inline-group .btn.left{
+  position: absolute;
+  left: 6px;
+  border: 1px solid #cdd4d9;
+  padding: 0px;
+  border-radius: 50%;
+  width: 26px;
+  display: inline-block;
+  height: 26px;
+  top: 6px;
+}
+.inline-group .btn.right{
+  position: absolute;
+  right: 6px;
+  border: 1px solid #cdd4d9;
+  padding: 0px;
+  border-radius: 50%;
+  width: 26px;
+  display: inline-block;
+  height: 26px;
+  top: 6px;
+}
+.inline-group input{
+  padding: 6px 36px;
+  text-align: center;
+  font-weight: 600;
+}
+.inline-block{
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+}
+.inline-block p{
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: grey;
+  margin-top: 5px;
+}
+p.input-note{
+  font-size: 12px;
+  border: 1px solid #dde2e6;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.side-box .action{
+  margin-top: 40px;
+}
+.side-box .action .btn{
+  letter-spacing: normal;
+}
+.footer-btn{
+  display: flex;
+}
+.footer-btn .form-group,
+.footer-btn .action{
+  width: 50%;
+}
+.footer-btn .action{
+  text-align: right;
+}
+.footer-btn .action button{
+  width: 50%;
+  letter-spacing: normal;
+}
+.footer-btn .form-group input{
+  display: inline-block;
+  border-radius: 50px;
+  width: 60%;
+  margin-right: 20px;
+  height: 40px;
+}
+.footer-btn .form-group button{
+  border-radius: 50px;
+  font-size: 14px;
+  height: 40px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+}
+.footer-btn .form-group button:hover{
+  background: #4569CD;
+  color: #ffffff;
+}
