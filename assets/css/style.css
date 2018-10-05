@@ -1735,6 +1735,24 @@ ul.items li .remove a .fa{
 }
 .table thead th{
   border-top: 0px;
+  font-size: 16px;
+}
+.table-item td{
+  vertical-align: middle;
+  color: #697687;
+  font-size: 15px;
+}
+.table-item td .fa{
+  font-size: 20px;  
+}
+.table-item td.total{
+  color: #30323E;
+  font-weight: 600;
+  font-size: 18px;
+}
+td a.selected{
+  color: #30323E;
+  font-weight: 600;
 }
 .table-item td .dropdown{
   position: relative;
@@ -1744,10 +1762,19 @@ ul.items li .remove a .fa{
   border: 1px solid #ECF0FB;
   border-radius: 5px;
   background-color: #F5F9FC;
-  padding: 3px;
+  padding: 6px 10px;
+  min-height: 42px;
+}
+.table-item td .dropdown a.dropdown-item{
+  background: #ffffff;
+  border-radius: 0px;
+  border-bottom: 1px solid #dedede;
+  max-height: 42px;
+  font-size: 14px;
 }
 .table-item td .dropdown a img{
-  width: 25%;
+  width: 32%;
+  margin-right: 10px;
 }
 .table-item td .dropdown a.selected{
   background: transparent;
@@ -1763,4 +1790,13 @@ ul.items li .remove a .fa{
 }
 .table-item td .dropdown.ongkir::after{
   content: none;
+}
+.dropdown-menu.expedisi{
+  padding: 0px;
+}
+th.shipping{
+  width: 17%;
+}
+.table-item tbody{
+  border-bottom: 1px solid #b3bac3;
 }
