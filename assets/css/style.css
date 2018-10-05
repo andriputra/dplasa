@@ -1024,6 +1024,20 @@ footer .copyright p{
   padding-bottom: 20px; 
   margin-top: 5%;
 }
+@media (max-width: 768px){
+  .item-box{
+    padding-bottom: 50px;
+  }
+  .item-box .box
+  {
+    height: 350px;
+    padding-bottom: 50px; 
+    margin-top: 10%;
+  }
+  .btn-blue{
+    font-size: 15px;
+  }
+}
 .review-title{
   font-size: 10px;
   display: inline-block;
