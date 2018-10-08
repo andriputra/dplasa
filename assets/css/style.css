@@ -410,6 +410,7 @@ span.notif{
   border-color: #dfdfe0;
   padding: 11px 15px;
   display: block;
+  font-size: 14px;
 }
 .sidebar .more a:hover{
   background: #333333;
@@ -472,6 +473,7 @@ span.notif{
 .sidebar ul li a{
   color: #30323e;
   vertical-align: middle;
+  font-size: 14px;
 }
 .sidebar ul li:hover a{
   color: #4569cd;
@@ -1609,6 +1611,7 @@ section.register{
   width: 100%;
   padding: 0px;
   border-radius: 0px;
+  border: none;
 }
 .dropdown-menu.cart{
   width: 320px;
