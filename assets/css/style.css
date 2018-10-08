@@ -1020,8 +1020,8 @@ footer .copyright p{
 }
 .item-box .box
 {
-  height: 310px;
-  padding-bottom: 20px; 
+  /*height: 0px;*/
+  /*padding-bottom: 10px; */
   margin-top: 5%;
 }
 @media (max-width: 768px){
@@ -1045,8 +1045,8 @@ footer .copyright p{
 
 .item-box:hover{
   border: 0;
-  height: 400px;
-  transition: .5s;
+  /*height: ;*/
+  transition: 1s;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
   box-shadow: 0px 0px 10px 0px rgba(189,189,189,1);
@@ -1056,8 +1056,10 @@ footer .copyright p{
   opacity: 1;
 }
 .item-box:hover  .btn-blue{
-  display: block;
-  visibility: visible;
+  transition: opacity .5s linear;
+  /*display: block;*/
+  /*visibility: visible;*/
+  opacity: 1;
 }
 .item-box .box:hover{
   border: 0;
@@ -1072,8 +1074,10 @@ footer .copyright p{
 }
 
 .item-box  .btn-blue{
-  visibility: hidden;
-  display: none;
+  /*visibility: hidden;
+  display: none;*/
+  transition: opacity .5s linear;
+  opacity: 0;
 }
 .item-box .image .overlay-hover .content-icon .active{
   background-color: #4669cd;
@@ -1236,7 +1240,7 @@ input[type="checkbox"]:disabled + .label-text:before{
 
 .navbar-wrapper-content .input-wrapper {
     position: relative;
-    width: 100%; 
+    /*width: 100%; */
 }
 
 .navbar-wrapper-content .input-wrapper select,  .bottom-content-wrapper .input-wrapper select{

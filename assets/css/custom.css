@@ -216,8 +216,9 @@ textarea.input-custom{
 #content { text-align: center; }
 
 #view {
-  margin: -31px 0;
+  margin: -51px 0;
   height: 384px;
+  margin-left: -30%;
 }
 
 #thumbs {
@@ -225,24 +226,26 @@ textarea.input-custom{
   margin: 20px 0;
 }
 
-#nav-left-thumbs { left: 70px; }
+#nav-left-thumbs { left: 5%; }
 
-#nav-right-thumbs { right: 70px; }
+#nav-right-thumbs { right: 5%; }
 
 #nav-left-thumbs, #nav-right-thumbs {
   position: absolute;
-  top: 30px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,.6);
-  font-size: 1em;
-  font-weight: bold;
-  color: #999;
-  text-shadow: 0 0 10px rgba(0,0,0,.5);
-  cursor: pointer;
-  transition-duration: .5s;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #555;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition-duration: .5s;
+    z-index: 99;
 }
 
 #nav-left-thumbs:hover, #nav-right-thumbs:hover { background: lightgrey; }
@@ -258,10 +261,10 @@ textarea.input-custom{
 }
 
 #pics-thumbs img {
-  /*padding: 5px;*/
+  padding: 5px;
   margin: 0 2px;
-  /*border-radius: 4px;*/
-  /*box-shadow: 0 0 5px rgba(0,0,0,.6);*/
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,.6);
   border: 1px solid #4569CD;
   cursor: pointer;
   height: 75px;
@@ -392,4 +395,15 @@ h5.card-title{
 }
 h5.card-title:hover{
   color: #5172d2;
+}
+.slider-area {
+  padding: 5px 40px;
+  border: 1px solid #ddd;
+}
+
+.slider {
+  margin-top: 50px;
+}
+.noUi-horizontal .noUi-handle {
+  width: 12px !important;
 }
