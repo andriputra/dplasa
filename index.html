@@ -22,7 +22,7 @@
     <script src="assets/js/script.js"></script>
   </head>
 <body>
-  <div id="Header">
+  <div id="Header" class="d-none d-sm-block">
     <div class="top-header">
       <div class="container">
         <div class="row">
@@ -46,7 +46,7 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-sm-block">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="assets/img/logo-new.png" alt="">
@@ -172,7 +172,15 @@
       </div>
     </div>
   </nav>
-  <div class="sub-nav">
+  <div class="mobile-nav d-block d-sm-none">
+    <ul class="mobile-menu">
+      <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a></li>
+      <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a><span>Inbox</span></li>
+      <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>Keranjang</span></a></li>
+      <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><span>Akun</span></a></li>
+    </ul>
+  </div>
+  <div class="sub-nav d-none d-sm-block">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-12">
@@ -200,20 +208,20 @@
             </div> -->
           </div>
         </div>
-        <div class="col">
+        <div class="col d-none d-sm-block">
           <ul class="menu-fill">
-            <li><a href="#"Home>Home</a></li>
-            <li><a href="#"Shop>Shop</a></li>
-            <li><a href="#"Blog>Blog</a></li>
-            <li><a href="#"About>About us</a></li>
-            <li><a href="#"Contact>Contact us</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Shop">Shop</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#About">About us</a></li>
+            <li><a href="#Contact">Contact us</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
   
-  <div class="content-top">
+  <div class="content-top d-none d-sm-block">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-12">
@@ -256,7 +264,7 @@
     </div>
   </div>
 
-  <section class="container">
+  <section class="container d-none d-sm-block">
     <div class="cta-top">
       <div class="row">
         <div class="col">
@@ -299,7 +307,103 @@
     </div>
   </section>
 
-  <section class="item-slide flash">
+  <!-- Header Mobile -->
+  <div class="mobile-menu d-block d-sm-none">
+    <ul class="list-of-menu">
+      <li class="bar">
+        <a href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-bars" aria-hidden="true"></i></a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a href="#Home">Home</a>
+          <a href="#Shop">Shop</a>
+          <a href="#Blog">Blog</a>
+          <a href="#About">About us</a>
+          <a href="#Contact">Contact us</a>
+        </div>
+      </li>
+      <li class="search">
+        <form action="#">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Cari Porduk">
+            <button type="submit" class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+        </form>
+      </li>
+      <li class="last">
+        <a class="links" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>
+          <span class="notif">0</span>
+        </a>
+      </li>
+      <li class="dropdown">
+        <a class="links dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="notif">2</span>
+        </a>
+        <!-- <div class="dropdown-menu cart" aria-labelledby="dropdownMenuButton">
+          <div class="info-cart">
+            <a href="#">2</a> Item(s) in My Cart
+          </div>
+          <ul class="items">
+            <li>
+              <div class="img-produk">
+                <img src="assets/img/phone.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="produk-desc">
+                <p>Mastell Juno S6 - Red, Masener</p>
+                <p class="price">1 x <strong>Rp 12,900,600</strong></p>
+              </div>
+              <div class="remove"><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+            </li>
+            <li>
+              <div class="img-produk">
+                <img src="assets/img/smart-watch.jpg" alt="product" class="img-fluid">
+              </div>
+              <div class="produk-desc">
+                <p>Mastell Juno S6 - Red, Masener</p>
+                <p class="price">1 x <strong>Rp 12,900,600</strong></p>
+              </div>
+              <div class="remove"><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></div>
+            </li>
+          </ul>
+          <div class="subtotal"><span>Subtotal: <strong>Rp 13,130,000</strong></span></div>
+          <div class="form-group">
+            <button type="button" class="btn btn-gradient">VIEW CART</button>
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-gradient btn-white">CHECK OUT</button>
+          </div>
+        </div> -->
+      </li>
+    </ul>
+  </div>
+  <div class="slider-mobile d-block d-sm-none">
+    <div class="owl-carousel slider__low_item owl-theme">
+      <div class="item">
+        <img src="assets/img/banner-slide.png" alt="banner" class="slide-image">
+      </div>
+      <div class="item">
+        <img src="assets/img/banner-slide.png" alt="banner" class="slide-image">
+      </div>
+    </div>
+  </div>
+  <div class="category-mobile d-block d-sm-none">
+    <div class="container">
+      <ul class="cat-item">
+        <li><a href="#"><img src="assets/img/icon1.png" alt="icon"></a><span class="text">Elektronik</span></li>
+        <li><a href="#"><img src="assets/img/icon2.png" alt="icon"></a><span class="text">Handphone & Tablet</span></li>
+        <li><a href="#"><img src="assets/img/icon3.png" alt="icon"></a><span class="text">Laptop & Aksesoris</span></li>
+        <li><a href="#"><img src="assets/img/icon4.png" alt="icon"></a><span class="text">Fashion Wanita</span></li>
+        <li><a href="#"><img src="assets/img/icon5.png" alt="icon"></a><span class="text">Fashion Pria</span></li>
+        <li><a href="#"><img src="assets/img/icon6.png" alt="icon"></a><span class="text">Fashion Anak</span></li>
+        <li><a href="#"><img src="assets/img/icon7.png" alt="icon"></a><span class="text">Fashion Muslim</span></li>
+        <li><a href="#"><img src="assets/img/icon8.png" alt="icon"></a><span class="text">Kecantikan</span></li>
+        <li><a href="#"><img src="assets/img/icon9.png" alt="icon"></a><span class="text">Kesehatan</span></li>
+        <li><a href="#"><img src="assets/img/icon10.png" alt="icon"></a><span class="text">Kategori Lainnya</span></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Header Mobile -->
+
+  <section class="item-slide flash d-none d-sm-block">
     <div class="container">
       <h4 class="title-head">FLASH SALE</h4>
       <div class="item-produk">
@@ -317,7 +421,7 @@
             </div>
           </div>
           <div class="col-md-10 col-12">
-            <div class="owl-carousel slider__low_item2 owl-theme">
+            <div class="owl-carousel slider__low_item4 owl-theme">
               <div class="item">
                 <div class="box">
                   <div class="image">
@@ -423,7 +527,7 @@
             </div>
           </div>
         </div>
-        <div class="flash-deals">
+        <div class="flash-deals d-none d-sm-block">
           <div class="row">
             <div class="col-md-6 col-12"><img src="assets/img/flash1.jpg" class="img-fluid"></div>
             <div class="col-md-6 col-12"><img src="assets/img/flash2.jpg" class="img-fluid"></div>
@@ -432,11 +536,132 @@
       </div>
     </div>
   </section>
+  <!-- Mobile Slide -->
+  <section class="item-slide mob flash d-block d-sm-none">
+    <div class="item-produk">
+      <div class="box-static">
+        <div class="top-section">
+          <div class="logo-flash">
+            <img src="assets/img/flash-icon.png" alt="" class="img-fluid"/>
+            <span>FLASH SALE</span>
+          </div>
+          <div class="text">
+            <h3><span class="box-w">03</span>:<span class="box-w">40</span>:<span class="box-w">46</span></h3>
+            <a href="#">Lihat semua <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="owl-carousel slider__low_item1 owl-theme">
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
+                <span class="discount">60% OFF</span>
+              </div>
+              <div class="content-box">
+                <p class="title">Headset Bluetooth</p>
+                <h3 class="price">Rp 6,000,000</h3>
+                <p class="disc">Rp 6,299,999</p>
+                <p class="progress-title">10 tersisa</p>
+                <div class="progress general" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
+                <span class="discount">50% OFF</span>
+              </div>
+              <div class="content-box">
+                <p class="title">Headset Bluetooth</p>
+                <h3 class="price">Rp 6,000,000</h3>
+                <p class="disc">Rp 6,299,999</p>
+                <p class="progress-title">10 tersisa</p>
+                <div class="progress orange" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
+                <span class="discount">75% OFF</span>
+              </div>
+              <div class="content-box">
+                <p class="title">Headset Bluetooth</p>
+                <h3 class="price">Rp 6,000,000</h3>
+                <p class="disc">Rp 6,299,999</p>
+                <p class="progress-title">2 tersisa</p>
+                <div class="progress red" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
+                <span class="discount">60% OFF</span>
+              </div>
+              <div class="content-box">
+                <p class="title">Headset Bluetooth</p>
+                <h3 class="price">Rp 6,000,000</h3>
+                <p class="disc">Rp 6,299,999</p>
+                <p class="progress-title red  ">2 tersisa</p>
+                <div class="progress red" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
+                <span class="discount">20% OFF</span>
+              </div>
+              <div class="content-box">
+                <p class="title">Headset Bluetooth</p>
+                <h3 class="price">Rp 6,000,000</h3>
+                <p class="disc">Rp 6,299,999</p>
+                <p class="progress-title red">Kosong</p>
+                <div class="progress red" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="image">
+                <img src="assets/img/produk1.jpg" alt="" class="img-fluid">
+                <span class="discount">40% OFF</span>
+              </div>
+              <div class="content-box">
+                <p class="title">Headset Bluetooth</p>
+                <h3 class="price">Rp 6,000,000</h3>
+                <p class="disc">Rp 6,299,999</p>
+                <p class="progress-title red">2 tersisa</p>
+                <div class="progress red" style="height: 5px;">
+                  <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="produk-tab">
     <div class="container">
-      <div class="box-title gradient">Produk terbaru</div>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <div class="box-title gradient"><span class="name-title">Produk terbaru</span> <a href="#" class="link d-block d-sm-none">lihat semua</a></div>
+      <ul class="nav nav-tabs d-none d-sm-block" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">New Arrivals</a>
         </li>
@@ -447,7 +672,7 @@
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">On Sellers</a>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content d-none d-sm-block" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
           <div class="box-flex">
             <div class="box-promo"><img src="assets/img/terbaru1.png" class="img-fluid"/></div>
@@ -464,7 +689,7 @@
     <div class="container">
       <div class="item-produk">
         <div class="row">
-          <div class="col-md-3 col-12">
+          <div class="col-md-3 col-12 d-none d-sm-block">
             <div class="box-static">
               <img src="assets/img/cam.png" alt="" class="img-fluid static"/>
               <div class="text">
@@ -477,7 +702,7 @@
             </div>
           </div>
           <div class="col-md-9 col-12">
-            <div class="owl-carousel slider__low_item3 owl-theme">
+            <div class="owl-carousel slider__low_item4 owl-theme">
               <div class="item">
                 <div class="box">
                   <div class="image">
@@ -627,8 +852,8 @@
 
   <section class="produk-tab green">
     <div class="container">
-      <div class="box-title gradient">Global Collection</div>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <div class="box-title gradient"><span class="name-title">Global Collection</span> <a href="#" class="link d-block d-sm-none">lihat semua</a></div>
+      <ul class="nav nav-tabs d-none d-sm-block" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#one" role="tab" aria-controls="home" aria-selected="true">New Arrivals</a>
         </li>
@@ -639,7 +864,7 @@
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#three" role="tab" aria-controls="contact" aria-selected="false">On Sellers</a>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content d-none d-sm-block" id="myTabContent">
         <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="home-tab">
           <div class="box-flex">
             <div class="box-promo"><img src="assets/img/terbaru1.png" class="img-fluid"/></div>
@@ -656,7 +881,7 @@
     <div class="container">
       <div class="item-produk">
         <div class="row">
-          <div class="col-md-3 col-12">
+          <div class="col-md-3 col-12 d-none d-sm-block">
             <div class="box-static">
               <img src="assets/img/cam.png" alt="" class="img-fluid static"/>
               <div class="text">
@@ -819,8 +1044,8 @@
 
   <section class="produk-tab orange">
     <div class="container">
-      <div class="box-title gradient">Hanya Untukmu</div>
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <div class="box-title gradient"><span class="name-title">Hanya Untukmu</span> <a href="#" class="link d-block d-sm-none">lihat semua</a></div>
+      <ul class="nav nav-tabs d-none d-sm-block" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="home-tab" data-toggle="tab" href="#one1" role="tab" aria-controls="home" aria-selected="true">New Arrivals</a>
         </li>
@@ -831,7 +1056,7 @@
           <a class="nav-link" id="contact-tab" data-toggle="tab" href="#three1" role="tab" aria-controls="contact" aria-selected="false">On Sellers</a>
         </li>
       </ul>
-      <div class="tab-content" id="myTabContent">
+      <div class="tab-content d-none d-sm-block" id="myTabContent">
         <div class="tab-pane fade show active" id="one1" role="tabpanel" aria-labelledby="home-tab">
           <div class="box-flex">
             <div class="box-promo"><img src="assets/img/terbaru1.png" class="img-fluid"/></div>
@@ -848,7 +1073,7 @@
     <div class="container">
       <div class="item-produk">
         <div class="row">
-          <div class="col-md-3 col-12">
+          <div class="col-md-3 col-12 d-none d-sm-block">
             <div class="box-static">
               <img src="assets/img/cam.png" alt="" class="img-fluid static"/>
               <div class="text">
@@ -1009,11 +1234,11 @@
     </div>
   </section>
 
-  <section class="flash-tab">
+  <section class="flash-tab d-none d-sm-block">
     <img src="assets/img/banner-sale.jpg" alt="" class="img-fluid full">
   </section>
 
-  <section class="top-category">
+  <section class="top-category d-none d-sm-block">
     <div class="container">
       <h4 class="title-head">TOP KATEGORI</h4>
       <div class="product-cat">
@@ -1140,7 +1365,7 @@
       <div class="row">
         <div class="col-md-8 col-12">
           <div class="promo box">
-            <h4 class="title-head">METHODE PEMBAYARAN</h4>
+            <h4 class="title-head">Metode Pembayaran</h4>
             <ul class="promo-list">
               <li><img src="assets/img/promo1.jpg" alt="promotion" class="img-fluid"></li>
               <li><img src="assets/img/promo2.jpg" alt="promotion" class="img-fluid"></li>
@@ -1169,7 +1394,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-12">
+        <div class="col-md-4 col-12 d-none d-sm-block">
           <div class="newsletter box">
             <h4 class="title-head">Newsletter</h4>
             <p>Get up-to-date information on weekly flyer features, Rollback & clearance items, exclusive products, and Walmart offers. You can unsubscribe at anytime.</p>
@@ -1199,34 +1424,48 @@
   <section class="cta p-35">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-12">
+        <div class="col-md-3 col-6">
           <div class="inline icon">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
           </div>
-          <div class="inline info">
+          <div class="inline info d-none d-sm-block">
             <p>Mon - Fri / 08:00 - 18:00</p>
             <span>Working Days/Hours</span>
           </div>
+          <div class="inline info d-block d-sm-none">
+            <p>Working Days/Hours</p>
+            <span>Mon - Fri / 08:00 - 18:00</span>
+          </div>
+          <div class="divider-mob d-block d-sm-none"></div>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-3 col-6">
           <div class="inline icon">
             <i class="fa fa-phone" aria-hidden="true"></i>
           </div>
-          <div class="inline info">
+          <div class="inline info d-none d-sm-block">
             <p>022 1234 5678</p>
             <span>Free support line!</span>
           </div>
+          <div class="inline info d-block d-sm-none">
+            <p>Free support line!</p>
+            <span>022 1234 5678</span>
+          </div>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-3 col-6">
           <div class="inline icon">
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </div>
-          <div class="inline info">
+          <div class="inline info d-none d-sm-block">
             <p>admin@dplasa.com</p>
             <span>Order Support!</span>
           </div>
+          <div class="inline info d-block d-sm-none">
+            <p>Order Support!</p>
+            <span>admin@dplasa.com</span>
+          </div>
+          <div class="divider-mob d-block d-sm-none"></div>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-3 col-6">
           <div class="inline icon">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           </div>
@@ -1251,7 +1490,7 @@
               <li><i class="fa fa-envelope" aria-hidden="true"></i> admin@plasa.com</li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col d-none d-sm-block">
             <h4>INFORMATION</h4>
             <ul class="widget-list">
               <li><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">About Us</a></li>
@@ -1262,7 +1501,7 @@
               <li><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Affiliate</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col d-none d-sm-block">
             <h4>CUSTOMER SERVICE</h4>
             <ul class="widget-list">
               <li><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Contact Us</a></li>
@@ -1273,7 +1512,7 @@
               <li><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Newsletter</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col d-none d-sm-block">
             <h4>EXTRAS</h4>
             <ul class="widget-list">
               <li><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Brands</a></li>
@@ -1284,7 +1523,7 @@
               <li><i class="fa fa-circle" aria-hidden="true"></i> <a href="#">Order History</a></li>
             </ul>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col-md-3 col-12 d-none d-sm-block">
             <h4>FROM OUR BLOG</h4>
             <ul class="blog-list">
               <li>
@@ -1320,9 +1559,25 @@
 </html>
 
 <script type="text/javascript">
+$('.owl-carousel.slider__low_item').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    dots: true,
+    autoplayTimeout:5000,
+    responsiveClass:true,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            dots: true
+        }
+    }
+})
+
 $('.owl-carousel.slider__low_item1').owlCarousel({
     loop:true,
-    margin:25,
+    margin:10,
     autoplay:true,
     dots: false,
     navText: ["<img src='assets/img/prev.png'>","<img src='assets/img/next.png'>"],
@@ -1331,69 +1586,8 @@ $('.owl-carousel.slider__low_item1').owlCarousel({
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
+            items:2,
             nav:false
-        },
-        1000:{
-            items:1,
-            nav:true,
-            loop:true
-        }
-    }
-})
-
-$('.owl-carousel.slider__low_item2').owlCarousel({
-    loop:true,
-    margin:25,
-    autoplay:true,
-    dots: false,
-    navText: ["<img src='assets/img/prev.png'>","<img src='assets/img/next.png'>"],
-    autoplayTimeout:5000,
-    responsiveClass:true,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:true
-        }
-    }
-})
-
-$('.owl-carousel.slider__low_item3').owlCarousel({
-    loop:true,
-    margin:25,
-    autoplay:true,
-    dots: false,
-    navText: ["<img src='assets/img/prev.png'>","<img src='assets/img/next.png'>"],
-    autoplayTimeout:5000,
-    responsiveClass:true,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:4,
-            nav:true,
-            loop:true
         }
     }
 })
@@ -1409,34 +1603,9 @@ $('.owl-carousel.slider__low_item4').owlCarousel({
     autoplayHoverPause:true,
     responsive:{
         0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:4,
+            items:2,
             nav:true,
-            loop:true
-        }
-    }
-})
-
-$('.owl-carousel.slider__low_item5').owlCarousel({
-    loop:true,
-    margin:25,
-    autoplay:true,
-    dots: false,
-    navText: ["<img src='assets/img/prev.png'>","<img src='assets/img/next.png'>"],
-    autoplayTimeout:5000,
-    responsiveClass:true,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
+            margin: 0
         },
         600:{
             items:1,
